@@ -1633,7 +1633,7 @@ body.theme-light .pulse-node::after {
 }
 
 .plan-features li.disabled {
-    color: rgba(255, 255, 255, 0.15);
+    color: var(--text-muted);
     cursor: not-allowed;
 }
 
@@ -1666,7 +1666,7 @@ body.theme-light .pulse-node::after {
 
 /* Data Tables Utilities */
 .table-container {
-    overflow-x: auto;
+    overflow-x: hidden;
     margin-top: 40px;
 }
 
