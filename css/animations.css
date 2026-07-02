@@ -1,0 +1,64 @@
+/* Ambient Background Fluid Paths Loops */
+@keyframes smoothBlobOne {
+    0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+    50% { transform: translate(80px, 60px) scale(1.1) rotate(90deg); }
+    100% { transform: translate(-40px, 120px) scale(0.9) rotate(180deg); }
+}
+@keyframes smoothBlobTwo {
+    0% { transform: translate(0, 0) scale(1.1) rotate(0deg); }
+    50% { transform: translate(-100px, -40px) scale(0.95) rotate(-90deg); }
+    100% { transform: translate(50px, -90px) scale(1.05) rotate(-180deg); }
+}
+@keyframes radialPulse {
+    0% { transform: scale(0.6); opacity: 1; }
+    100% { transform: scale(2.4); opacity: 0; }
+}
+
+/* Explicit Intersection In-View Motion Triggers */
+.reveal-frame {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-frame.triggered {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Base Delay Stagger Utility Classes */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+
+/* Direct Keyframe Component Elements */
+.animate-fade-up { animation: keyframeFadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.animate-fade-left { animation: keyframeFadeLeft 1s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.animate-fade-right { animation: keyframeFadeRight 1s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+
+@keyframes keyframeFadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes keyframeFadeLeft {
+    from { opacity: 0; transform: translateX(-32px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+@keyframes keyframeFadeRight {
+    from { opacity: 0; transform: translateX(32px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Dynamic Click Action Injections */
+.ripple-wave {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.35);
+    transform: scale(0);
+    animation: structuralRipple 0.6s linear;
+    pointer-events: none;
+}
+@keyframes structuralRipple {
+    to { transform: scale(4); opacity: 0; }
+}
+

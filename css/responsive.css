@@ -1,0 +1,56 @@
+/* Custom Media Queries Mapping Ultra-Wide down to Handheld Mobile devices */
+@media (max-width: 1400px) {
+    .container { max-width: 1140px; }
+}
+
+@media (max-width: 1199px) {
+    .container { max-width: 960px; }
+    h1 { font-size: 46px; }
+    h2 { font-size: 32px; }
+    .grid-4 { grid-template-columns: repeat(3, 1fr); }
+    .dual-panel { gap: 32px; padding: 40px; }
+}
+
+@media (max-width: 991px) {
+    .container { max-width: 720px; }
+    .grid-3 { grid-template-columns: repeat(2, 1fr); }
+    .grid-4 { grid-template-columns: repeat(2, 1fr); }
+    .dual-panel { grid-template-columns: 1fr; gap: 40px; }
+    .footer-grid { grid-template-columns: repeat(3, 1fr); gap: 32px; }
+    .footer-brand, .footer-newsletter { grid-column: span 3; }
+    .featured-tier { transform: scale(1); }
+    .featured-tier:hover { transform: translateY(-4px); }
+}
+
+@media (max-width: 767px) {
+    .container { max-width: 540px; }
+    h1 { font-size: 36px; }
+    .hero-sub { font-size: 16px; }
+    .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+    
+    /* Mobile Menu Core Framework overrides */
+    .mobile-toggle { display: inline-flex; z-index: 1001; }
+    .nav-links {
+        position: fixed; top: 0; right: -100%; width: 80%; height: 100vh;
+        background: #080C19; border-left: 1px solid var(--glass-border);
+        flex-direction: column; padding: 120px 40px; gap: 24px;
+        transition: cubic-bezier(0.16, 1, 0.3, 1) 0.5s;
+    }
+    .nav-links.active { right: 0; }
+    .nav-actions { display: none; }
+    .footer-base { flex-direction: column; gap: 16px; text-align: center; }
+    
+    /* Menu Active Structural Transformations */
+    .mobile-toggle.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .mobile-toggle.active .bar:nth-child(2) { opacity: 0; }
+    .mobile-toggle.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+}
+
+@media (max-width: 575px) {
+    .container { padding: 0 16px; }
+    h1 { font-size: 28px; }
+    h2 { font-size: 24px; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .footer-brand, .footer-newsletter { grid-column: span 1; }
+    .newsletter-form { flex-direction: column; }
+}
