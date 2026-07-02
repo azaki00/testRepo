@@ -13,18 +13,18 @@
 </head>
 <body>
     <div class="bg-blur-container">
+        <div class="blob blob-indigo"></div>
         <div class="blob blob-mint"></div>
-        <div class="blob blob-blue"></div>
     </div>
-
+    
     <header class="navbar" id="main-nav">
         <div class="nav-container">
             <a href="index.html" class="logo-lockup">
-                <img class="logo-image" src="images/Main Logo Color - Transparent (for light backgrounds).png"
-                    alt="epoc" />
+                <img class="logo-image logo-light" src="images/Main Logo Color - Transparent (for light backgrounds).png" alt="ePOC"/>
+                <img class="logo-image logo-dark" src="images/Main Logo Color - Transparent (for dark backgrounds).png" alt="ePOC"/>
             </a>
             <nav class="nav-links">
-                <a href="index.html" class="nav-item ">Home</a>
+                <a href="index.html" class="nav-item">Home</a>
                 <a href="about.html" class="nav-item">About</a>
                 <a href="services.html" class="nav-item">Services</a>
                 <a href="subscriptions.html" class="nav-item">Subscriptions</a>
@@ -32,13 +32,10 @@
                 <a href="contact.html" class="nav-item">Contact</a>
             </nav>
             <div class="nav-actions">
-                <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme"
-                    title="Toggle theme">
+                <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme" title="Toggle theme">
                     <span class="theme-toggle-icon"></span>
                 </button>
-                <!-- btn btn-secondary -->
-                <a href="contact.html" class=" btn btn-primary ripple">Book a Demo</a>
-                <!-- <a href="subscriptions.html" class="btn btn-primary ripple">Start Free</a> -->
+                <a href="contact.html" class="btn btn-primary ripple">Book a Demo</a>
             </div>
             <button class="mobile-toggle" aria-label="Toggle Menu">
                 <span class="bar"></span>
@@ -48,91 +45,110 @@
         </div>
     </header>
 
-    <main class="padding-top-xl">
-        <section class="container text-center animate-fade-up">
-            <div class="badge-pill">Architectural Knowledge Base</div>
-            <h1 class="font-azonix">Systemic Capabilities </h1><h1 class="font-azonix">FAQ</h1>
-            <p class="hero-sub text-muted">Review comprehensive documentation matrices answering high-volume architectural, integration, and billing framework topics.</p>
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="container text-center">
+                <div class="badge-pill animate-fade-up">Architectural Knowledge Base</div>
+                <h1 class="font-azonix animate-fade-up delay-1">Systemic Capabilities FAQ</h1>
+                <p class="hero-sub text-muted animate-fade-up delay-2">Review comprehensive documentation matrices answering high-volume architectural, integration, and billing framework topics.</p>
+            </div>
         </section>
 
-        <section class="container max-width-md margin-top-xl">
-            <div class="accordion-group stagger-animate">
-                
-                <div class="accordion-item glass-panel">
-                    <button class="accordion-trigger"><span>Q1: What defines the structural core of ePOC?</span><span class="chevron"></span></button>
-                    <div class="accordion-content"><p>ePOC serves as TDNT's next-generation AI-assisted Communication Platform as a Service (CPaaS). It bypasses legacy telecom barriers, exposing raw transactional interfaces for global messaging execution directly through high-uptime web APIs.</p></div>
+        <!-- FAQ Accordion -->
+        <section class="section-py">
+            <div class="container max-width-md">
+                <div class="accordion-group stagger-animate">
+                    
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-trigger"><span>Q1: What defines the structural core of ePOC?</span><span class="chevron"></span></button>
+                        <div class="accordion-content"><p>ePOC serves as TDNT's next-generation AI-assisted Communication Platform as a Service (CPaaS). It bypasses legacy telecom barriers, exposing raw transactional interfaces for global messaging execution directly through high-uptime web APIs.</p></div>
+                    </div>
+
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-trigger"><span>Q2: How are message tokens calculated across the grid?</span><span class="chevron"></span></button>
+                        <div class="accordion-content"><p>Outbound traffic relies on structured classification profiles: Marketing Broadcast vectors run at $0.05 per individual notification; automated utility transaction updates cost $0.01; whereas inbound customer conversational blocks remain completely free.</p></div>
+                    </div>
+
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-trigger"><span>Q3: What severe restrictions control outbound messaging quotas?</span><span class="chevron"></span></button>
+                        <div class="accordion-content"><p>Verified developer parameters auto-scale transparently from 250 initialization units to 2,000, maxing at 10,000 per structural day based on delivery validation tracking. Violating regulatory compliance patterns triggers an immediate permanent system block.</p></div>
+                    </div>
+
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-trigger"><span>Q4: Can external business database structures connect directly?</span><span class="chevron"></span></button>
+                        <div class="accordion-content"><p>Absolutely. Activating our Exclusive profile configuration opens raw universal endpoints that hook into external warehouse storage systems, client management software, and automated workflow triggers seamlessly.</p></div>
+                    </div>
+
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-trigger"><span>Q5: How does the conversational linguistic engine evaluate non-English queries?</span><span class="chevron"></span></button>
+                        <div class="accordion-content"><p>Our high-tier VIP profile embeds advanced natural sentence parsers handling complex English, Arabic, and French grammar frameworks natively, along with automated voice message conversions.</p></div>
+                    </div>
+
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-trigger"><span>Q6: What guarantees protect high-compliance transactional vectors?</span><span class="chevron"></span></button>
+                        <div class="accordion-content"><p>The entire global architecture uses strict multi-region encryption protocols. We maintain explicit GDPR systemic alignment alongside GSMA hardware data center isolation paradigms.</p></div>
+                    </div>
+
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-trigger"><span>Q7: How fast can our developer teams execute basic initialization?</span><span class="chevron"></span></button>
+                        <div class="accordion-content"><p>Our documentation models supply native plug-and-play code snippets. Standard transmission tests can be completely initialized inside existing systems in under ten minutes.</p></div>
+                    </div>
+
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-trigger"><span>Q8: Are backup delivery failover routines automatically handled?</span><span class="chevron"></span></button>
+                        <div class="accordion-content"><p>Yes. If a carrier network drops packets, our intelligent routing infrastructure automatically reroutes transmissions through alternative paths to protect destination arrival rates.</p></div>
+                    </div>
+
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-trigger"><span>Q9: Does the platform provide tools to filter offensive messaging?</span><span class="chevron"></span></button>
+                        <div class="accordion-content"><p>Yes. The VIP Enterprise tier activates automated content checking systems, recognizing and blocking offensive language or spam patterns before they hit your agent queues.</p></div>
+                    </div>
+
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-trigger"><span>Q10: Can we configure custom roles for regional internal teams?</span><span class="chevron"></span></button>
+                        <div class="accordion-content"><p>Yes. The central administrative hub enables deep permission configurations, letting you assign limited view rights or execution authority levels across international business departments.</p></div>
+                    </div>
+
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-trigger"><span>Q11: What mechanisms prevent repetitive API call billing?</span><span class="chevron"></span></button>
+                        <div class="accordion-content"><p>Our smart platform caching system flags matching outgoing notifications sent within short timeframes, optimizing message delivery costs while saving enterprise budget.</p></div>
+                    </div>
+
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-trigger"><span>Q12: How are dedicated custom numbers obtained for automated channels?</span><span class="chevron"></span></button>
+                        <div class="accordion-content"><p>You can verify existing enterprise numbers through our setup dashboard, or lease dedicated long-codes and regional virtual extensions directly through the portal.</p></div>
+                    </div>
+
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-trigger"><span>Q13: What tracking metrics do operational administrators receive?</span><span class="chevron"></span></button>
+                        <div class="accordion-content"><p>Our interface renders granular metrics for message delivery confirmation times, recipient click-through rates, conversational engagement metrics, and individual agent response speeds.</p></div>
+                    </div>
+
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-trigger"><span>Q14: How does the system handle massive spikes in simultaneous traffic?</span><span class="chevron"></span></button>
+                        <div class="accordion-content"><p>The engine leverages auto-scaling cloud node arrays that scale up instant resource allocations automatically during unexpected traffic spikes to prevent latency drops.</p></div>
+                    </div>
+
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-trigger"><span>Q15: What specialized assistance options support complex deployments?</span><span class="chevron"></span></button>
+                        <div class="accordion-content"><p>We provide full API documentation alongside tech support. High-tier accounts receive direct, ongoing support channels from dedicated infrastructure deployment engineers.</p></div>
+                    </div>
+
                 </div>
+            </div>
+        </section>
 
-                <div class="accordion-item glass-panel">
-                    <button class="accordion-trigger"><span>Q2: How are message tokens calculated across the grid?</span><span class="chevron"></span></button>
-                    <div class="accordion-content"><p>Outbound traffic relies on structured classification profiles: Marketing Broadcast vectors run at $0.05 per individual notification; automated utility transaction updates cost $0.01; whereas inbound customer conversational blocks remain completely free.</p></div>
+        <!-- CTA Section -->
+        <section class="section-py bg-subtle">
+            <div class="container">
+                <div class="cta-box glass-panel text-center dynamic-glow-border">
+                    <h2 class="font-azonix">Still Have Questions?</h2>
+                    <p class="text-muted margin-top-sm">Our technical team is ready to help with your specific requirements</p>
+                    <div class="margin-top-lg">
+                        <a href="contact.html" class="btn btn-primary ripple">Contact Support</a>
+                    </div>
                 </div>
-
-                <div class="accordion-item glass-panel">
-                    <button class="accordion-trigger"><span>Q3: What severe restrictions control outbound messaging quotas?</span><span class="chevron"></span></button>
-                    <div class="accordion-content"><p>Verified developer parameters auto-scale transparently from 250 initialization units to 2,000, maxing at 10,000 per structural day based on delivery validation tracking. Violating regulatory compliance patterns triggers an immediate permanent system block.</p></div>
-                </div>
-
-                <div class="accordion-item glass-panel">
-                    <button class="accordion-trigger"><span>Q4: Can external business database structures connect directly?</span><span class="chevron"></span></button>
-                    <div class="accordion-content"><p>Absolutely. Activating our Exclusive profile configuration opens raw universal endpoints that hook into external warehouse storage systems, client management software, and automated workflow triggers seamlessly.</p></div>
-                </div>
-
-                <div class="accordion-item glass-panel">
-                    <button class="accordion-trigger"><span>Q5: How does the conversational linguistic engine evaluate non-English queries?</span><span class="chevron"></span></button>
-                    <div class="accordion-content"><p>Our high-tier VIP profile embeds advanced natural sentence parsers handling complex English, Arabic, and French grammar frameworks natively, along with automated voice message conversions.</p></div>
-                </div>
-
-                <div class="accordion-item glass-panel">
-                    <button class="accordion-trigger"><span>Q6: What guarantees protect high-compliance transactional vectors?</span><span class="chevron"></span></button>
-                    <div class="accordion-content"><p>The entire global architecture uses strict multi-region encryption protocols. We maintain explicit GDPR systemic alignment alongside GSMA hardware data center isolation paradigms.</p></div>
-                </div>
-
-                <div class="accordion-item glass-panel">
-                    <button class="accordion-trigger"><span>Q7: How fast can our developer teams execute basic initialization?</span><span class="chevron"></span></button>
-                    <div class="accordion-content"><p>Our documentation models supply native plug-and-play code snippets. Standard transmission tests can be completely initialized inside existing systems in under ten minutes.</p></div>
-                </div>
-
-                <div class="accordion-item glass-panel">
-                    <button class="accordion-trigger"><span>Q8: Are backup delivery failover routines automatically handled?</span><span class="chevron"></span></button>
-                    <div class="accordion-content"><p>Yes. If a carrier network drops packets, our intelligent routing infrastructure automatically reroutes transmissions through alternative paths to protect destination arrival rates.</p></div>
-                </div>
-
-                <div class="accordion-item glass-panel">
-                    <button class="accordion-trigger"><span>Q9: Does the platform provide tools to filter offensive messaging?</span><span class="chevron"></span></button>
-                    <div class="accordion-content"><p>Yes. The VIP Enterprise tier activates automated content checking systems, recognizing and blocking offensive language or spam patterns before they hit your agent queues.</p></div>
-                </div>
-
-                <div class="accordion-item glass-panel">
-                    <button class="accordion-trigger"><span>Q10: Can we configure custom roles for regional internal teams?</span><span class="chevron"></span></button>
-                    <div class="accordion-content"><p>Yes. The central administrative hub enables deep permission configurations, letting you assign limited view rights or execution authority levels across international business departments.</p></div>
-                </div>
-
-                <div class="accordion-item glass-panel">
-                    <button class="accordion-trigger"><span>Q11: What mechanisms prevent repetitive API call billing?</span><span class="chevron"></span></button>
-                    <div class="accordion-content"><p>Our smart platform caching system flags matching outgoing notifications sent within short timeframes, optimizing message delivery costs while saving enterprise budget.</p></div>
-                </div>
-
-                <div class="accordion-item glass-panel">
-                    <button class="accordion-trigger"><span>Q12: How are dedicated custom numbers obtained for automated channels?</span><span class="chevron"></span></button>
-                    <div class="accordion-content"><p>You can verify existing enterprise numbers through our setup dashboard, or lease dedicated long-codes and regional virtual extensions directly through the portal.</p></div>
-                </div>
-
-                <div class="accordion-item glass-panel">
-                    <button class="accordion-trigger"><span>Q13: What tracking metrics do operational administrators receive?</span><span class="chevron"></span></button>
-                    <div class="accordion-content"><p>Our interface renders granular metrics for message delivery confirmation times, recipient click-through rates, conversational engagement metrics, and individual agent response speeds.</p>
-                </div></div>
-
-                <div class="accordion-item glass-panel">
-                    <button class="accordion-trigger"><span>Q14: How does the system handle massive spikes in simultaneous traffic?</span><span class="chevron"></span></button>
-                    <div class="accordion-content"><p>The engine leverages auto-scaling cloud node arrays that scale up instant resource allocations automatically during unexpected traffic spikes to prevent latency drops.</p></div>
-                </div>
-
-                <div class="accordion-item glass-panel">
-                    <button class="accordion-trigger"><span>Q15: What specialized assistance options support complex deployments?</span><span class="chevron"></span></button>
-                    <div class="accordion-content"><p>We provide full API documentation alongside tech support. High-tier accounts receive direct, ongoing support channels from dedicated infrastructure deployment engineers.</p></div>
-                </div>
-
             </div>
         </section>
     </main>
@@ -140,14 +156,8 @@
     <footer class="site-footer">
         <div class="container footer-grid">
             <div class="footer-brand">
-                     <img src="images/Main Logo Color - Transparent (for light backgrounds).png" 
-                 alt="ePOC Logo" 
-                 class="logo-image logo-light">
-            
-            <img src="images/Main Logo Color - Transparent (for dark backgrounds).png" 
-                 alt="ePOC Logo" 
-                 class="logo-image logo-dark">
-            
+                <img src="images/Main Logo Color - Transparent (for light backgrounds).png" alt="ePOC Logo" class="logo-image logo-light">
+                <img src="images/Main Logo Color - Transparent (for dark backgrounds).png" alt="ePOC Logo" class="logo-image logo-dark">
                 <p class="text-xs text-muted margin-top-md">Next-generation global communications orchestration system infrastructure powered by TDNT.</p>
             </div>
             <div class="footer-links-col">

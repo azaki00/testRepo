@@ -13,15 +13,15 @@
 </head>
 <body>
     <div class="bg-blur-container">
-        <div class="blob blob-blue"></div>
+        <div class="blob blob-indigo"></div>
         <div class="blob blob-mint"></div>
     </div>
-
+    
     <header class="navbar" id="main-nav">
         <div class="nav-container">
             <a href="index.html" class="logo-lockup">
-                <img class="logo-image" src="images/Main Logo Color - Transparent (for light backgrounds).png"
-                    alt="epoc" />
+                <img class="logo-image logo-light" src="images/Main Logo Color - Transparent (for light backgrounds).png" alt="ePOC"/>
+                <img class="logo-image logo-dark" src="images/Main Logo Color - Transparent (for dark backgrounds).png" alt="ePOC"/>
             </a>
             <nav class="nav-links">
                 <a href="index.html" class="nav-item">Home</a>
@@ -32,13 +32,10 @@
                 <a href="contact.html" class="nav-item">Contact</a>
             </nav>
             <div class="nav-actions">
-                <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme"
-                    title="Toggle theme">
+                <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme" title="Toggle theme">
                     <span class="theme-toggle-icon"></span>
                 </button>
-                <!-- btn btn-secondary -->
-                <a href="contact.html" class=" btn btn-primary ripple">Book a Demo</a>
-                <!-- <a href="subscriptions.html" class="btn btn-primary ripple">Start Free</a> -->
+                <a href="contact.html" class="btn btn-primary ripple">Book a Demo</a>
             </div>
             <button class="mobile-toggle" aria-label="Toggle Menu">
                 <span class="bar"></span>
@@ -48,62 +45,106 @@
         </div>
     </header>
 
-    <main class="padding-top-xl">
-        <section class="container text-center animate-fade-up">
-            <div class="badge-pill">Production Ready Solutions</div>
-            <h1 class="font-azonix">Programmable Communication Matrix</h1>
-            <p class="hero-sub text-muted">Leverage highly optimized programmatic channels built on cloud scalability frameworks. Deploy communication arrays in minutes.</p>
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="container text-center">
+                <div class="badge-pill animate-fade-up">Production Ready Solutions</div>
+                <h1 class="font-azonix animate-fade-up delay-1">Programmable Communication Matrix</h1>
+                <p class="hero-sub text-muted animate-fade-up delay-2">Leverage highly optimized programmatic channels built on cloud scalability frameworks. Deploy communication arrays in minutes.</p>
+            </div>
         </section>
 
-        <section class="container margin-top-xl">
-            <div class="grid grid-3 stagger-animate">
-                <div class="card glass-panel service-detail-card">
-                    <div class="service-meta">
-                        <span class="icon-frame">✉️</span>
+        <!-- Services Grid -->
+        <section class="section-py">
+            <div class="container">
+                <div class="grid grid-3 gap-lg stagger-animate">
+                    <!-- Service 1 -->
+                    <div class="card glass-panel service-card">
+                        <div class="service-icon-wrapper">
+                            <span class="service-icon">✉️</span>
+                        </div>
                         <h3>Global SMS API Array</h3>
+                        <p class="text-sm text-muted">Programmatic delivery routes ensuring direct low-latency message drop execution across 900+ global cellular carriers.</p>
+                        <div class="service-link">
+                            <a href="contact.html" class="btn btn-text">Review Documentation →</a>
+                        </div>
                     </div>
-                    <p class="text-sm text-muted">Programmatic delivery routes ensuring direct low-latency message drop execution across 900+ global cellular carriers.</p>
-                    <div class="action-row"><a href="contact.html" class="btn btn-text">Review Documentation &rarr;</a></div>
-                </div>
-                <div class="card glass-panel service-detail-card">
-                    <div class="service-meta">
-                        <span class="icon-frame">📞</span>
+
+                    <!-- Service 2 -->
+                    <div class="card glass-panel service-card">
+                        <div class="service-icon-wrapper">
+                            <span class="service-icon">📞</span>
+                        </div>
                         <h3>Voice Integration Layer</h3>
+                        <p class="text-sm text-muted">Interactive automated voice response nodes, real-time programmatic session bridges, and text-to-speech rendering engines.</p>
+                        <div class="service-link">
+                            <a href="contact.html" class="btn btn-text">Review Documentation →</a>
+                        </div>
                     </div>
-                    <p class="text-sm text-muted">Interactive automated voice response nodes, real-time programmatic session bridges, and text-to-speech rendering engines.</p>
-                    <div class="action-row"><a href="contact.html" class="btn btn-text">Review Documentation &rarr;</a></div>
-                </div>
-                <div class="card glass-panel service-detail-card">
-                    <div class="service-meta">
-                        <span class="icon-frame">💬</span>
+
+                    <!-- Service 3 -->
+                    <div class="card glass-panel service-card featured-service">
+                        <div class="service-badge">Most Popular</div>
+                        <div class="service-icon-wrapper">
+                            <span class="service-icon">💬</span>
+                        </div>
                         <h3>WhatsApp Business Hub</h3>
+                        <p class="text-sm text-muted">Complete meta validation layers supporting high-volume automated notification triggers, media matrices, and verification status loops.</p>
+                        <div class="service-link">
+                            <a href="contact.html" class="btn btn-text">Review Documentation →</a>
+                        </div>
                     </div>
-                    <p class="text-sm text-muted">Complete meta validation layers supporting high-volume automated notification triggers, media matrices, and verification status loops.</p>
-                    <div class="action-row"><a href="contact.html" class="btn btn-text">Review Documentation &rarr;</a></div>
-                </div>
-                <div class="card glass-panel service-detail-card">
-                    <div class="service-meta">
-                        <span class="icon-frame">🔒</span>
+
+                    <!-- Service 4 -->
+                    <div class="card glass-panel service-card">
+                        <div class="service-icon-wrapper">
+                            <span class="service-icon">🔒</span>
+                        </div>
                         <h3>OTP & Security Verification</h3>
+                        <p class="text-sm text-muted">Fully automated time-sensitive secure cryptographic passcode dispatch sequences with localized auto-routing fallback contingencies.</p>
+                        <div class="service-link">
+                            <a href="contact.html" class="btn btn-text">Review Documentation →</a>
+                        </div>
                     </div>
-                    <p class="text-sm text-muted">Fully automated time-sensitive secure cryptographic passcode dispatch sequences with localized auto-routing fallback contingencies.</p>
-                    <div class="action-row"><a href="contact.html" class="btn btn-text">Review Documentation &rarr;</a></div>
-                </div>
-                <div class="card glass-panel service-detail-card">
-                    <div class="service-meta">
-                        <span class="icon-frame">🤖</span>
+
+                    <!-- Service 5 -->
+                    <div class="card glass-panel service-card">
+                        <div class="service-icon-wrapper">
+                            <span class="service-icon">🤖</span>
+                        </div>
                         <h3>Intelligent Linguistic AI</h3>
+                        <p class="text-sm text-muted">Advanced conversational multi-tier automated chatbots with natural sentence reading, intent analysis, and contextual mapping.</p>
+                        <div class="service-link">
+                            <a href="contact.html" class="btn btn-text">Review Documentation →</a>
+                        </div>
                     </div>
-                    <p class="text-sm text-muted">Advanced conversational multi-tier automated chatbots with natural sentence reading, intent analysis, and contextual mapping.</p>
-                    <div class="action-row"><a href="contact.html" class="btn btn-text">Review Documentation &rarr;</a></div>
-                </div>
-                <div class="card glass-panel service-detail-card">
-                    <div class="service-meta">
-                        <span class="icon-frame">📊</span>
+
+                    <!-- Service 6 -->
+                    <div class="card glass-panel service-card">
+                        <div class="service-icon-wrapper">
+                            <span class="service-icon">📊</span>
+                        </div>
                         <h3>Unified Engine Analytics</h3>
+                        <p class="text-sm text-muted">Real-time systemic tracking systems mapping error-logs, interaction latencies, delivery tracking, and volume logs.</p>
+                        <div class="service-link">
+                            <a href="contact.html" class="btn btn-text">Review Documentation →</a>
+                        </div>
                     </div>
-                    <p class="text-sm text-muted">Real-time systemic tracking systems mapping error-logs, interaction latencies, delivery tracking, and volume logs.</p>
-                    <div class="action-row"><a href="contact.html" class="btn btn-text">Review Documentation &rarr;</a></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section-py bg-subtle">
+            <div class="container">
+                <div class="cta-box glass-panel text-center dynamic-glow-border">
+                    <h2 class="font-azonix">Ready to Integrate?</h2>
+                    <p class="text-muted margin-top-sm">Access comprehensive API documentation and start building today</p>
+                    <div class="margin-top-lg">
+                        <a href="contact.html" class="btn btn-primary ripple">Talk to Sales</a>
+                        <a href="faq.html" class="btn btn-secondary margin-left-sm">View Documentation</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -112,14 +153,8 @@
     <footer class="site-footer">
         <div class="container footer-grid">
             <div class="footer-brand">
-                     <img src="images/Main Logo Color - Transparent (for light backgrounds).png" 
-                 alt="ePOC Logo" 
-                 class="logo-image logo-light">
-            
-            <img src="images/Main Logo Color - Transparent (for dark backgrounds).png" 
-                 alt="ePOC Logo" 
-                 class="logo-image logo-dark">
-            
+                <img src="images/Main Logo Color - Transparent (for light backgrounds).png" alt="ePOC Logo" class="logo-image logo-light">
+                <img src="images/Main Logo Color - Transparent (for dark backgrounds).png" alt="ePOC Logo" class="logo-image logo-dark">
                 <p class="text-xs text-muted margin-top-md">Next-generation global communications orchestration system infrastructure powered by TDNT.</p>
             </div>
             <div class="footer-links-col">
