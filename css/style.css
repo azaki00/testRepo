@@ -1,57 +1,112 @@
-/* Core Structural Configuration & Variables */
+/* Core Structural Configuration & Variables - ePOC CPaaS Design System */
 :root {
-    /* Dark Mode (Default) - CPaaS Enterprise Theme */
+    /* Dark Mode (Default) - Enterprise CPaaS Theme */
     --bg-midnight: #0A0E1A;
+    --bg-surface: #0F1424;
+    --bg-elevated: #151B30;
+    
+    /* Primary Brand Colors - ePOC Identity */
     --color-mint: #00D4AA;
     --color-indigo: #5B6FFF;
     --color-core-blue: #001F8F;
     --color-accent-cyan: #00E5FF;
+    
+    /* Typography */
     --text-light: #FFFFFF;
+    --text-primary: #F8FAFC;
+    --text-secondary: #CBD5E1;
     --text-muted: #94A3B8;
-    --glass-bg: rgba(255, 255, 255, 0.02);
-    --glass-border: rgba(255, 255, 255, 0.06);
-    --glass-blur: blur(32px);
-    --nav-surface: rgba(10, 14, 26, 0.85);
+    --text-disabled: #64748B;
+    
+    /* Glass Morphism */
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-bg-hover: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-border-hover: rgba(255, 255, 255, 0.15);
+    --glass-blur: blur(40px);
+    
+    /* Navigation */
+    --nav-surface: rgba(10, 14, 26, 0.9);
     --nav-link: #E2E8F0;
-    --footer-bg: rgba(5, 8, 16, 0.95);
+    --nav-link-hover: #FFFFFF;
+    
+    /* Footer */
+    --footer-bg: rgba(5, 8, 16, 0.98);
     --footer-muted: #64748B;
     --footer-heading: #F1F5F9;
-    --footer-border: rgba(255, 255, 255, 0.03);
+    --footer-border: rgba(255, 255, 255, 0.04);
+    
+    /* Spacing & Radius */
+    --radius-xl: 28px;
     --radius-lg: 20px;
-    --radius-md: 12px;
+    --radius-md: 14px;
+    --radius-sm: 10px;
+    --radius-full: 9999px;
+    
+    /* Typography Scale */
     --font-primary: 'Plus Jakarta Sans', sans-serif;
     --font-display: 'Montserrat', sans-serif;
+    
+    /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-    --card-bg: rgba(255, 255, 255, 0.02);
-    --card-border: rgba(255, 255, 255, 0.06);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+    /* Cards */
+    --card-bg: rgba(255, 255, 255, 0.03);
+    --card-border: rgba(255, 255, 255, 0.08);
+    --card-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    --card-shadow-hover: 0 8px 40px rgba(0, 0, 0, 0.3);
+    
+    /* Forms */
     --input-bg: rgba(0, 0, 0, 0.3);
-    --input-border: rgba(255, 255, 255, 0.08);
-    --input-focus: rgba(91, 111, 255, 0.25);
-    --table-header-bg: rgba(0, 0, 0, 0.2);
-    --table-hover: rgba(255, 255, 255, 0.01);
-    --accordion-bg: rgba(0, 0, 0, 0.15);
+    --input-border: rgba(255, 255, 255, 0.1);
+    --input-focus: rgba(91, 111, 255, 0.3);
+    --input-focus-ring: 0 0 0 3px rgba(91, 111, 255, 0.15);
+    
+    /* Tables */
+    --table-header-bg: rgba(0, 0, 0, 0.25);
+    --table-hover: rgba(255, 255, 255, 0.02);
+    --table-border: rgba(255, 255, 255, 0.05);
+    
+    /* Accordion */
+    --accordion-bg: rgba(0, 0, 0, 0.2);
+    --accordion-border: rgba(255, 255, 255, 0.06);
+    
+    /* Visual Elements */
     --map-bg: rgba(0, 0, 0, 0.4);
-    --dot-bg: rgba(255, 255, 255, 0.18);
-    --sidebar-bg: rgba(0, 0, 0, 0.2);
-    --line-bg: rgba(255, 255, 255, 0.08);
-    --stat-bg: rgba(0, 0, 0, 0.25);
-    --pricing-bg: rgba(255, 255, 255, 0.03);
+    --dot-bg: rgba(255, 255, 255, 0.2);
+    --sidebar-bg: rgba(0, 0, 0, 0.25);
+    --line-bg: rgba(255, 255, 255, 0.1);
+    --stat-bg: rgba(0, 0, 0, 0.3);
+    --pricing-bg: rgba(255, 255, 255, 0.04);
+    
+    /* Gradients & Effects */
     --tag-bg: linear-gradient(135deg, var(--color-indigo), var(--color-accent-cyan));
     --tag-text: white;
-    --badge-bg: rgba(91, 111, 255, 0.12);
-    --badge-border: rgba(91, 111, 255, 0.3);
-    --badge-text: #A5B4FC;
-    --btn-secondary-bg: rgba(255, 255, 255, 0.03);
-    --btn-secondary-border: rgba(255, 255, 255, 0.08);
-    --btn-secondary-hover: rgba(255, 255, 255, 0.06);
-    --btn-secondary-border-hover: rgba(255, 255, 255, 0.15);
-    --gradient-start: #00D4AA;
-    --gradient-end: #00E5FF;
-    --mesh-line: rgba(91, 111, 255, 0.04);
-    --blob-opacity: 0.12;
+    --gradient-primary: linear-gradient(135deg, var(--color-mint), var(--color-accent-cyan));
+    --gradient-brand: linear-gradient(135deg, var(--color-indigo), var(--color-mint));
+    --gradient-hero: linear-gradient(180deg, rgba(91, 111, 255, 0.15) 0%, rgba(0, 212, 170, 0.08) 100%);
+    --mesh-line: rgba(91, 111, 255, 0.06);
+    
+    /* Blobs */
+    --blob-opacity: 0.15;
     --blob-mix-blend: screen;
-
+    
+    /* Badges & Pills */
+    --badge-bg: rgba(91, 111, 255, 0.15);
+    --badge-border: rgba(91, 111, 255, 0.35);
+    --badge-text: #A5B4FC;
+    
+    /* Buttons */
+    --btn-primary-bg: var(--gradient-primary);
+    --btn-primary-hover: linear-gradient(135deg, #00E5FF, #00D4AA);
+    --btn-secondary-bg: rgba(255, 255, 255, 0.05);
+    --btn-secondary-border: rgba(255, 255, 255, 0.1);
+    --btn-secondary-hover: rgba(255, 255, 255, 0.08);
+    --btn-secondary-border-hover: rgba(255, 255, 255, 0.2);
+    
+    /* Marquee */
     --marquee-bg: #ffffff;
     --marquee-text: #1a1a1a;
     --marquee-border: #e2e8f0;
@@ -62,54 +117,89 @@
     --cpaaas-secondary: #00D4AA;
     --cpaaas-accent: #00E5FF;
     --enterprise-blue: #001F8F;
+    
+    /* Section Spacing */
+    --section-padding-y: 120px;
+    --section-padding-y-sm: 80px;
+    --container-max: 1400px;
 }
 
-/* Light Mode Override */
+/* Light Mode Override - ePOC CPaaS Light Theme */
 body.theme-light {
     --bg-midnight: #F8FAFC;
+    --bg-surface: #FFFFFF;
+    --bg-elevated: #F1F5F9;
+    
     --color-mint: #00A88A;
     --color-indigo: #4F46E5;
     --color-core-blue: #DBE7FF;
     --color-accent-cyan: #0891B2;
+    
     --text-light: #0F172A;
+    --text-primary: #0F172A;
+    --text-secondary: #334155;
     --text-muted: #475569;
-    --glass-bg: rgba(255, 255, 255, 0.9);
+    --text-disabled: #94A3B8;
+    
+    --glass-bg: rgba(255, 255, 255, 0.95);
+    --glass-bg-hover: rgba(255, 255, 255, 0.98);
     --glass-border: rgba(15, 23, 42, 0.08);
-    --glass-blur: blur(32px);
-    --nav-surface: rgba(255, 255, 255, 0.9);
+    --glass-border-hover: rgba(15, 23, 42, 0.15);
+    --glass-blur: blur(40px);
+    
+    --nav-surface: rgba(255, 255, 255, 0.95);
     --nav-link: #1E293B;
+    --nav-link-hover: #0F172A;
+    
     --footer-bg: rgba(255, 255, 255, 0.98);
     --footer-muted: #475569;
     --footer-heading: #0F172A;
     --footer-border: rgba(15, 23, 42, 0.06);
-    --card-bg: rgba(255, 255, 255, 0.95);
+    
+    --card-bg: rgba(255, 255, 255, 0.98);
     --card-border: rgba(15, 23, 42, 0.08);
-    --input-bg: rgba(255, 255, 255, 0.9);
+    --card-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    --card-shadow-hover: 0 8px 40px rgba(0, 0, 0, 0.1);
+    
+    --input-bg: rgba(255, 255, 255, 0.95);
     --input-border: rgba(15, 23, 42, 0.12);
-    --input-focus: rgba(79, 70, 229, 0.15);
+    --input-focus: rgba(79, 70, 229, 0.2);
+    --input-focus-ring: 0 0 0 3px rgba(79, 70, 229, 0.1);
+    
     --table-header-bg: rgba(15, 23, 42, 0.04);
     --table-hover: rgba(15, 23, 42, 0.02);
+    --table-border: rgba(15, 23, 42, 0.06);
+    
     --accordion-bg: rgba(15, 23, 42, 0.03);
+    --accordion-border: rgba(15, 23, 42, 0.06);
+    
     --map-bg: rgba(15, 23, 42, 0.04);
     --dot-bg: rgba(15, 23, 42, 0.15);
     --sidebar-bg: rgba(15, 23, 42, 0.04);
     --line-bg: rgba(15, 23, 42, 0.08);
-    --stat-bg: rgba(255, 255, 255, 0.9);
-    --pricing-bg: rgba(255, 255, 255, 0.95);
+    --stat-bg: rgba(255, 255, 255, 0.95);
+    --pricing-bg: rgba(255, 255, 255, 0.98);
+    
     --tag-bg: linear-gradient(135deg, var(--color-indigo), var(--color-accent-cyan));
     --tag-text: white;
+    --gradient-primary: linear-gradient(135deg, var(--color-mint), var(--color-accent-cyan));
+    --gradient-brand: linear-gradient(135deg, var(--color-indigo), var(--color-mint));
+    --gradient-hero: linear-gradient(180deg, rgba(79, 70, 229, 0.08) 0%, rgba(0, 168, 138, 0.05) 100%);
+    --mesh-line: rgba(79, 70, 229, 0.06);
+    
+    --blob-opacity: 0.5;
+    --blob-mix-blend: multiply;
+    
     --badge-bg: rgba(79, 70, 229, 0.08);
     --badge-border: rgba(79, 70, 229, 0.2);
     --badge-text: #4F46E5;
-    --btn-secondary-bg: rgba(255, 255, 255, 0.9);
+    
+    --btn-primary-bg: var(--gradient-primary);
+    --btn-primary-hover: linear-gradient(135deg, #0891B2, #00A88A);
+    --btn-secondary-bg: rgba(255, 255, 255, 0.95);
     --btn-secondary-border: rgba(15, 23, 42, 0.12);
     --btn-secondary-hover: rgba(255, 255, 255, 1);
     --btn-secondary-border-hover: rgba(15, 23, 42, 0.25);
-    --gradient-start: #00A88A;
-    --gradient-end: #0891B2;
-    --mesh-line: rgba(79, 70, 229, 0.06);
-    --blob-opacity: 0.5;
-    --blob-mix-blend: multiply;
 }
 
 /* Apply Light Mode Text Colors */
@@ -390,12 +480,44 @@ body.theme-light .base-policies a:hover {
 
 body {
     background-color: var(--bg-midnight);
-    color: var(--text-light);
+    color: var(--text-primary);
     font-family: var(--font-primary);
     overflow-x: hidden;
-    line-height: 1.6;
+    line-height: 1.7;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Typography Hierarchy */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-light);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
+h2 { font-size: clamp(2rem, 4vw, 3rem); }
+h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
+h4 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
+h5 { font-size: clamp(1.125rem, 1.5vw, 1.25rem); }
+h6 { font-size: clamp(1rem, 1.2vw, 1.125rem); }
+
+p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+.text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 @font-face {
@@ -434,7 +556,7 @@ body {
 
 .grid {
     display: grid;
-    gap: 24px;
+    gap: 28px;
 }
 
 .grid-2 {
@@ -447,6 +569,20 @@ body {
 
 .grid-4 {
     grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1024px) {
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
 }
 
 .text-center {
@@ -546,33 +682,40 @@ p {
 .hero-sub {
     font-size: 20px;
     max-width: 720px;
-    margin: 0 auto 40px;
+    margin: 0 auto 48px;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    font-weight: 400;
 }
 
 .text-sm {
     font-size: 14px;
+    line-height: 1.7;
 }
 
 .text-xs {
     font-size: 12px;
+    line-height: 1.6;
 }
 
 .text-muted {
-    color: var(--text-muted);
+    color: var(--text-muted) !important;
 }
 
 .text-gradient {
-    background: linear-gradient(135deg, var(--cpaaas-primary), var(--cpaaas-accent));
+    background: var(--gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: background 0.3s ease;
+    background-clip: text;
+    transition: background 0.4s ease;
 }
 
 .gradient-text {
-    background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end), var(--cpaaas-primary));
+    background: var(--gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: background 0.3s ease;
+    background-clip: text;
+    transition: background 0.4s ease;
 }
 
 .uppercase {
@@ -775,46 +918,67 @@ p {
     height: 100%;
 }
 
-/* Interactive Enterprise Buttons */
+/* Interactive Enterprise Buttons - CPaaS Design */
 .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
     font-family: var(--font-primary);
     font-size: 14px;
     font-weight: 600;
-    padding: 10px 22px;
+    padding: 12px 28px;
     border-radius: var(--radius-md);
     text-decoration: none;
     cursor: pointer;
-    transition: var(--transition-smooth);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
+    letter-spacing: 0.02em;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn:hover::before {
+    left: 100%;
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--cpaaas-secondary), var(--cpaaas-accent));
+    background: var(--btn-primary-bg);
     color: #0A0E1A;
-    border: 1px solid var(--cpaaas-secondary);
+    border: 1px solid rgba(0, 212, 170, 0.3);
     font-weight: 700;
+    box-shadow: 0 4px 16px rgba(0, 212, 170, 0.2);
 }
 
 .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(0, 212, 170, 0.35);
-    background: linear-gradient(135deg, var(--cpaaas-accent), var(--cpaaas-secondary));
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(0, 212, 170, 0.4);
+    background: var(--btn-primary-hover);
+    border-color: rgba(0, 229, 255, 0.5);
 }
 
 .btn-secondary {
     background: var(--btn-secondary-bg);
     color: var(--text-light);
     border: 1px solid var(--btn-secondary-border);
+    backdrop-filter: blur(8px);
 }
 
 .btn-secondary:hover {
     background: var(--btn-secondary-hover);
     border-color: var(--btn-secondary-border-hover);
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .btn-text {
@@ -823,16 +987,18 @@ p {
     border-radius: 0;
     background: transparent;
     border: none;
+    font-weight: 600;
 }
 
 .btn-text:hover {
-    color: var(--text-light);
+    color: var(--color-accent-cyan);
 }
 
 .size-lg {
-    padding: 14px 32px;
+    padding: 16px 36px;
     font-size: 16px;
     border-radius: var(--radius-lg);
+    font-weight: 700;
 }
 
 .size-full {
@@ -840,30 +1006,51 @@ p {
 }
 
 .btn-sm {
-    padding: 6px 14px;
-    font-size: 12px;
+    padding: 8px 18px;
+    font-size: 13px;
+    border-radius: var(--radius-sm);
 }
 
 .badge-pill {
-    display: inline-block;
-    padding: 8px 16px;
-    background: linear-gradient(135deg, rgba(91, 111, 255, 0.15), rgba(0, 212, 170, 0.1));
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, rgba(91, 111, 255, 0.18), rgba(0, 212, 170, 0.12));
     border: 1px solid var(--badge-border);
     color: var(--cpaaas-accent);
-    border-radius: 100px;
-    font-size: 11px;
+    border-radius: var(--radius-full);
+    font-size: 12px;
     font-weight: 700;
-    letter-spacing: 0.1em;
-    margin-bottom: 24px;
+    letter-spacing: 0.12em;
+    margin-bottom: 28px;
     width: fit-content;
     text-transform: uppercase;
-    transition: all 0.3s ease;
-    box-shadow: 0 0 20px rgba(91, 111, 255, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0 24px rgba(91, 111, 255, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.badge-pill::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.badge-pill:hover::before {
+    left: 100%;
 }
 
 .badge-pill:hover {
-    box-shadow: 0 0 30px rgba(91, 111, 255, 0.2);
-    transform: translateY(-2px);
+    box-shadow: 0 0 40px rgba(91, 111, 255, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px) scale(1.02);
+    border-color: var(--color-accent-cyan);
 }
 
 /* ============================================
@@ -937,34 +1124,36 @@ body.theme-light .glass-panel:hover {
     opacity: 0.6;
 }
 
-/* Card - Base */
+/* Card - Base CPaaS Design */
 .card {
-    padding: 32px;
-    transition: var(--transition-bounce);
+    padding: 36px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     background: var(--card-bg);
     border: 1px solid var(--card-border);
     border-radius: var(--radius-lg);
     position: relative;
     overflow: hidden;
+    backdrop-filter: blur(8px);
 }
 
 /* Card hover with interactive lift and glow */
 .card:hover {
-    transform: translateY(-8px) scale(1.01);
-    border-color: rgba(98, 102, 254, 0.3);
-    box-shadow: 0 32px 80px rgba(0, 0, 0, 0.4),
-        0 0 0 1px rgba(98, 102, 254, 0.08),
-        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    transform: translateY(-10px) scale(1.02);
+    border-color: rgba(98, 102, 254, 0.35);
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4),
+        0 0 0 1px rgba(98, 102, 254, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    background: var(--glass-bg-hover);
 }
 
 /* Light mode card hover */
 body.theme-light .card:hover {
-    border-color: rgba(79, 70, 229, 0.2);
-    box-shadow: 0 32px 80px rgba(0, 0, 0, 0.06),
-        0 0 0 1px rgba(79, 70, 229, 0.05);
+    border-color: rgba(79, 70, 229, 0.25);
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.08),
+        0 0 0 1px rgba(79, 70, 229, 0.08);
 }
 
-/* Card shimmer */
+/* Card shimmer effect */
 .card::before {
     content: '';
     position: absolute;
@@ -972,7 +1161,7 @@ body.theme-light .card:hover {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle at center, rgba(98, 102, 254, 0.03), transparent 70%);
+    background: radial-gradient(circle at center, rgba(98, 102, 254, 0.04), transparent 70%);
     opacity: 0;
     transition: opacity 0.6s ease;
     pointer-events: none;
@@ -1080,9 +1269,14 @@ body.theme-light .card:hover {
 
 .hero-ctas {
     display: flex;
-    gap: 16px;
+    gap: 20px;
     justify-content: center;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-ctas .btn {
+    min-width: 160px;
 }
 
 @keyframes heroBlobFloat {
@@ -1327,10 +1521,20 @@ body.theme-light .pulse-node::after {
     }
 }
 
-/* Section Header Structure */
+/* Section Header Structure - CPaaS Design */
 .section-header {
-    max-width: 640px;
-    margin: 0 auto 56px;
+    max-width: 700px;
+    margin: 0 auto 64px;
+}
+
+.section-header h2 {
+    margin-bottom: 16px;
+}
+
+.section-header p {
+    font-size: 18px;
+    max-width: 580px;
+    margin: 0 auto;
 }
 
 /* Service Cards Custom Layout */
