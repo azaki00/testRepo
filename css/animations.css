@@ -2,6 +2,21 @@
    ePOC Animations - Smooth, Professional Micro-interactions
    ========================================================================== */
 
+/* Base Reveal Frame State - Elements start hidden */
+.reveal-frame {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: opacity, transform;
+}
+
+/* Triggered State - Elements animate in when visible */
+.reveal-frame.triggered {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
 /* Fade Up Animation */
 .animate-fade-up {
     opacity: 0;
@@ -51,6 +66,16 @@
 .stagger-animate > *:nth-child(4) { animation-delay: 0.4s; }
 .stagger-animate > *:nth-child(5) { animation-delay: 0.5s; }
 .stagger-animate > *:nth-child(6) { animation-delay: 0.6s; }
+
+/* Stagger Delays for Reveal Frame Elements */
+.stagger-animate > .reveal-frame:nth-child(1) { transition-delay: 0.05s; }
+.stagger-animate > .reveal-frame:nth-child(2) { transition-delay: 0.1s; }
+.stagger-animate > .reveal-frame:nth-child(3) { transition-delay: 0.15s; }
+.stagger-animate > .reveal-frame:nth-child(4) { transition-delay: 0.2s; }
+.stagger-animate > .reveal-frame:nth-child(5) { transition-delay: 0.25s; }
+.stagger-animate > .reveal-frame:nth-child(6) { transition-delay: 0.3s; }
+.stagger-animate > .reveal-frame:nth-child(7) { transition-delay: 0.35s; }
+.stagger-animate > .reveal-frame:nth-child(8) { transition-delay: 0.4s; }
 
 /* Delay Classes */
 .delay-1 { animation-delay: 0.2s !important; }
