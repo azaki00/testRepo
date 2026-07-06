@@ -3,9 +3,17 @@
  */
 document.addEventListener('DOMContentLoaded', () => {
     // Intercept Elements Matrix For In-View Animations
-    const elementsToAnimate = document.querySelectorAll('.grid > div, .animate-fade-up, .animate-fade-left, .animate-fade-right');
+    const elementsToAnimate = document.querySelectorAll(
+        '.grid > div, .card, .stat-item, .industry-card, .about-content, .about-visuals, .illustration-card, .section-header, .dual-panel, .animate-fade-up, .animate-fade-left, .animate-fade-right'
+    );
     
-    elementsToAnimate.forEach(el => el.classList.add('reveal-frame'));
+    elementsToAnimate.forEach(el => {
+        if (!el.classList.contains('animate-fade-up') && 
+            !el.classList.contains('animate-fade-left') && 
+            !el.classList.contains('animate-fade-right')) {
+            el.classList.add('reveal-frame');
+        }
+    });
 
     const intersectionConfig = { threshold: 0.1, rootMargin: '0px 0px -40px 0px' };
 
