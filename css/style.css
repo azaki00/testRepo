@@ -545,7 +545,7 @@ p {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2.5em 24px;
+    padding: 3em 24px;
 }
 
 .max-width-md {
@@ -822,6 +822,7 @@ p {
     margin: 0 auto;
     padding: 10px 48px;
     transition: background 0.3s ease;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
 .logo-lockup {
@@ -1201,6 +1202,7 @@ body.theme-light .card:hover {
 
 /* Page Specific Section Mechanics */
 .hero-section {
+
     padding: 120px 0 50px;
     position: relative;
     overflow: hidden;
@@ -1307,16 +1309,16 @@ body.theme-light .card:hover {
 }
 
 .background-illustration-card {
-    background:
+    /* background:
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url('../images/3D_mesh_network.jpg') center center !important;
+        url('../images/3D_mesh_network.jpg') center center !important; */
     background-size: cover !important;
 }
 
 .background-illustration-card-2 {
-    background:
+    /* background:
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url('../images/textured-card.png') center center !important;
+        url('../images/textured-card.png') center center !important; */
     background-size: cover !important;
 }
 
@@ -2617,7 +2619,7 @@ body:not(.theme-light) .logo-light {
 /* ============================================ */
 
 .about-section {
-    padding: 80px 0;
+    /* padding: 80px 0; */
     background: var(--bg-midnight);
     transition: background 0.3s ease;
     position: relative;
@@ -2631,7 +2633,7 @@ body.theme-light .about-section {
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 20px;
     align-items: center;
 }
 
@@ -2721,14 +2723,14 @@ body.theme-light .about-section {
 }
 
 .years-image {
-    height: 140px !important;
+    height: 200px !important;
     width: auto;
-    filter: drop-shadow(0 0 20px rgba(98, 102, 254, 0.3));
+    /* filter: drop-shadow(0 0 20px rgba(98, 102, 254, 0.3)); */
     transition: filter 0.3s ease;
 }
 
 .years-stat:hover .years-image {
-    filter: drop-shadow(0 0 30px rgba(98, 102, 254, 0.5));
+    /* filter: drop-shadow(0 0 30px rgba(98, 102, 254, 0.5)); */
 }
 
 .years-label {
@@ -2753,13 +2755,12 @@ body.theme-light .about-section {
 /* Illustrations Grid */
 .about-illustrations {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
 .illustration-card.glass-panel {
-    border: 1px solid var(--glass-border);
-    border-radius: var(--radius-lg);
+    border: 2px solid var(--glass-border);
+    border-radius: 20px;
     transition: all 0.3s ease;
 }
 
@@ -2836,7 +2837,7 @@ body.theme-light .about-section {
 /* Responsive */
 @media (max-width: 1024px) {
     .about-grid {
-        gap: 40px;
+        gap: 20px;
     }
 
     .about-heading {
@@ -2849,7 +2850,7 @@ body.theme-light .about-section {
         color: #fff !important;
     }
     .about-section {
-        padding: 60px 0;
+        padding: 20px 0;
     }
 
     .about-grid {
@@ -2922,11 +2923,11 @@ body.theme-light .about-section {
     inset: 0;
     z-index: 0;
     pointer-events: none;
-    background-image:
+    /* background-image:
         linear-gradient(rgba(189, 243, 223, 0.08) 1px, transparent 1px),
         linear-gradient(90deg, rgba(189, 243, 223, 0.08) 1px, transparent 1px);
     background-size: 60px 60px;
-    animation: gridScroll 20s linear infinite;
+    animation: gridScroll 20s linear infinite; */
     opacity: 1;
 }
 
@@ -3774,4 +3775,8 @@ body.theme-light .marquee-item .marquee-dot {
 
 .delay-3 {
     animation-delay: 0.3s;
+}
+.wave-pattern{
+    border-radius: 30% 20% 0 0 ;
+    background: url('../images/pattern-5.png') no-repeat;
 }

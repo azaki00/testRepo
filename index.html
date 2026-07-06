@@ -14,6 +14,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/telecom-particles.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
@@ -27,15 +28,17 @@
     <header class="navbar" id="main-nav">
         <div class="nav-container">
             <a href="index.html" class="logo-lockup">
-                <img class="logo-image" src="images/Main Logo Color - Transparent (for light backgrounds).png"
-                    alt="epoc" />
+                <img class="logo-image logo-light"
+                    src="images/Main Logo Color - Transparent (for light backgrounds).png" alt="ePOC" />
+                <img class="logo-image logo-dark" src="images/Main Logo Color - Transparent (for dark backgrounds).png"
+                    alt="ePOC" />
             </a>
             <nav class="nav-links">
                 <a href="index.html" class="nav-item active">Home</a>
                 <a href="about.html" class="nav-item">About</a>
                 <a href="services.html" class="nav-item">Services</a>
                 <a href="subscriptions.html" class="nav-item">Subscriptions</a>
-                <a href="faq.html" class="nav-item">FAQ</a>
+                <a href="faq.html" class="nav-item ">FAQ</a>
                 <a href="contact.html" class="nav-item">Contact</a>
             </nav>
             <div class="nav-actions">
@@ -43,9 +46,7 @@
                     title="Toggle theme">
                     <span class="theme-toggle-icon"></span>
                 </button>
-                <!-- btn btn-secondary -->
-                <a href="contact.html" class=" btn btn-primary ripple">Book a Demo</a>
-                <!-- <a href="subscriptions.html" class="btn btn-primary ripple">Start Free</a> -->
+                <a href="contact.html" class="btn btn-primary ripple">Book a Demo</a>
             </div>
             <button class="mobile-toggle" aria-label="Toggle Menu">
                 <span class="bar"></span>
@@ -58,9 +59,9 @@
     <main>
         <section class="hero-section text-center">
             <div class="container animate-fade-up">
-                <div class="badge-pill">AI-Driven CPaaS Ecosystem</div>
-                <h1 class="font-azonix">Transform the way your<br><span class="gradient-text font-azonix">business
-                        communicates.</span></h1>
+                <div class="badge-pill padding-xl">AI-Driven CPaaS Ecosystem</div>
+                <h1 class="font-azonix padding-xl">Transform the way your<br>business
+                    communicates.</h1>
 
                 <p class="hero-sub text-muted">AI-Driven CPaaS that unifies SMS, Voice, WhatsApp, and more — smarter,
                     faster, and enterprise-secure across 190+ countries.</p>
@@ -69,7 +70,7 @@
                     <a href="contact.html" class="btn btn-secondary size-lg">Book a Demo</a>
                 </div>
 
-                <div class="hero-illustration glass-panel animate-fade-up delay-2">
+                <!-- <div class="hero-illustration glass-panel animate-fade-up delay-2">
                     <div class="window-chrome">
                         <span class="dot-win"></span><span class="dot-win"></span><span class="dot-win"></span>
                         <div class="window-title">ePOC Global Omni-Channel Node Router</div>
@@ -92,80 +93,85 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
         <!-- About Section -->
         <section class="about-section">
-            <div class="container about-grid">
-                <!-- Left Column: Text Content -->
-                <div class="about-content">
-                    <span class="badge-pill">About ePOC</span>
-                    <h2 class="about-heading font-azonix">
-                        Next‑Generation CPaaS for <br><span class="text-gradient font-azonix">Smarter Global
-                            Communication</span>
-                    </h2>
-                    <p class="about-text">
-                        ePOC by TDNT is a next-generation CPaaS platform that unifies messaging, voice, video, and chat
-                        into one scalable ecosystem.
-                    </p>
-                    <p class="about-text">
-                        Connect instantly through secure plug-and-play APIs and power seamless customer communication
-                        without the complexity of traditional telecom infrastructure.
-                    </p>
-
-                    <ul class="about-features">
-                        <li>
-                            <span class="material-symbols-outlined feature-icon"> →</span>
-                            AI‑driven automation & advanced analytics
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined feature-icon"> →</span>
-                            Seamless integration across 190+ countries
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined feature-icon"> →</span>
-                            Faster responses & smarter campaigns
-                        </li>
-                    </ul>
-
-                    <a href="/about.html" class="btn btn-primary size-lg about-cta">
-                        Learn More About ePOC
-                        <span class="material-symbols-outlined"> →</span>
-                    </a>
+            <div class="network-container demo-card" id="netBox">
+                <div class="network-layer">
+                    <svg id="netSvg"></svg>
                 </div>
+                <div  class="network-content">
 
-                <!-- Right Column: Visuals & Stats -->
-                <div class="about-visuals">
-                    <!-- Years Stat Block -->
-                    <div class="years-stat glass-panel animate-fade-up">
-                        <div class="years-stat-content">
-                            <img src="https://epoc.one/assets/images/about/years.png" alt="03+ Years"
-                                class="years-image">
-                            <span class="years-label">
-                                Of innovation in <br>
-                                <strong>intelligent connectivity</strong>
-                            </span>
+                    <div class="container about-grid">
+                        <!-- Left Column: Text Content -->
+                        <div class="about-content">
+                            <span class="badge-pill">About ePOC</span>
+                            <h2 class="about-heading font-azonix">
+                                Next‑Generation CPaaS for <br><span class="text-gradient font-azonix">Smarter Global
+                                    Communication</span>
+                            </h2>
+                            <p class="about-text">
+                                ePOC by TDNT is a next-generation CPaaS platform that unifies messaging, voice, video, and
+                                chat
+                                into one scalable ecosystem.
+                            </p>
+                            <p class="about-text">
+                                Connect instantly through secure plug-and-play APIs and power seamless customer
+                                communication
+                                without the complexity of traditional telecom infrastructure.
+                            </p>
+    
                         </div>
-                    </div>
-
-                    <!-- Illustration Grid -->
-                    <div class="about-illustrations">
-                        <!-- Card 1: Glowing Smartphone -->
-                        <div class="illustration-card glass-panel background-illustration-card-2">
-                            <div alt="Omnichannel Network" class="omni-icon">
+    
+                        <!-- Right Column: Visuals & Stats -->
+                        <div class="about-visuals">
+                            <!-- Years Stat Block -->
+                            <div class="years-stat animate-fade-up">
+                                <div class="years-stat-content">
+                                    <img src="./images/pill-years.png" alt="03+ Years" class="years-image">
+                                    <span class="years-label">
+                                        Of innovation in <br>
+                                        <strong>intelligent connectivity</strong>
+                                    </span>
+                                </div>
                             </div>
-                            <p class="illustration-label">Omnichannel ready</p>
+                            <!-- <ul class="about-features">
+                                <li>
+                                    <span class="material-symbols-outlined feature-icon"> →</span>
+                                    AI‑driven automation & advanced analytics
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined feature-icon"> →</span>
+                                    Seamless integration across 190+ countries
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined feature-icon"> →</span>
+                                    Faster responses & smarter campaigns
+                                </li>
+                            </ul>
+     -->
+                            <!-- Illustration Grid -->
+    
                         </div>
-
-                        <!-- Card 2: 3D Network Graph -->
-                        <div class="illustration-card glass-panel background-illustration-card">
-                            <p class="country-count">190+</h2>
-                            <p class="illustration-label">Country network</p>
+                        <div class="about-illustrations">
+                            <!-- Card 1: Glowing Smartphone -->
+                            <div class="illustration-card glass-panel background-illustration-card-2">
+                                <div alt="Omnichannel Network" class="omni-icon">
+                                </div>
+                                <p class="illustration-label">Omnichannel ready</p>
+                            </div>
+                            <!-- Card 2: 3D Network Graph -->
+                        </div>
+                        <div class="about-illustrations">
+                            <div class="illustration-card glass-panel background-illustration-card">
+                                <p class="country-count">190+</h2>
+                                <p class="illustration-label">Country network</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
         <section class="features-section container">
             <div class="section-header text-center animate-fade-up">
@@ -174,25 +180,25 @@
                     instantly.</p>
             </div>
             <div class="grid grid-4 stagger-animate">
-                <div class="card glass-panel text-center">
+                <div class="card glass-panel text-center wave-pattern">
                     <div class="card-icon">📢</div>
                     <h3>Broadcast</h3>
                     <p class="text-sm text-muted">Send high-volume omni-channel campaigns across SMS and WhatsApp with
                         programmatic analytical reporting.</p>
                 </div>
-                <div class="card glass-panel text-center">
+                <div class="card glass-panel text-center wave-pattern">
                     <div class="card-icon">💬</div>
                     <h3>Chat</h3>
                     <p class="text-sm text-muted">Centralized high-performance inbox for your multi-agent customer
                         conversations. Dynamic cross-team assignments.</p>
                 </div>
-                <div class="card glass-panel text-center">
+                <div class="card glass-panel text-center wave-pattern">
                     <div class="card-icon">🤖</div>
                     <h3>Auto Responder</h3>
                     <p class="text-sm text-muted">Smart programmatic automation giving rapid conversational replies,
                         granularly toggled per dynamic channel.</p>
                 </div>
-                <div class="card glass-panel text-center">
+                <div class="card glass-panel text-center wave-pattern">
                     <div class="card-icon">📇</div>
                     <h3>Phonebook</h3>
                     <p class="text-sm text-muted">Hyper-segmented audience directories. Store contacts, custom
@@ -391,6 +397,7 @@
 
     <script src="js/navigation.js"></script>
     <script src="js/animations.js"></script>
+    <script src="js/telecom-particles.js"></script>
     <script src="js/main.js"></script>
 </body>
 
